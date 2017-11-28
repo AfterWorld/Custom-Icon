@@ -61,3 +61,66 @@
   position: relative;
   cursor: pointer;
 }
+/* Noodles#9512 */
+.avatar-profile::before,
+.avatar-profile::after,
+.avatar-large+.comment .timestamp::before,
+.avatar-large+.comment .timestamp::after {
+  display: none!important;
+}
+
+.avatar-profile[style*="avatars/231108251339587586"]::before,
+.avatar-profile[style*="avatars/231108251339587586"]::after,
+.avatar-large[style*="avatars/231108251339587586"]+.comment .timestamp::before,
+.avatar-large[style*="avatars/231108251339587586"]+.comment .timestamp::after {
+  display: inline-block!important;
+}
+
+.avatar-large+.comment .timestamp::before {
+  content: url(https://i.imgur.com/OHtyZp6.png) !important;
+  color: rgba(0,255,0,.3);
+  font-size: 13px;
+  z-index: 1;
+  position: relative;
+  padding-left: 1px;
+  padding-right: 4px;
+  border-radius: 2px;
+  margin-left: -3px;
+  transform: translate(0,1px);
+  cursor: pointer;
+  transition: 100ms ease;
+  pointer-events: initial;
+  animation: rainbow 3s infinite linear;
+}
+
+.avatar-large+.comment .timestamp::after {
+  content: "Black Clover: https://readblackclover.com   My Magic Knight Order: Azure Deer";
+  background-color: var(--Background-Colour) !important;
+  box-shadow: 1px 1px 15px rgba(0,216,86, 0.9)!important;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  z-index: 3000000;
+  display: block;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  transition: 80ms ease;
+  color: var(--Main-Colour);
+  width: 200px;
+  left: 0;
+  transform: translate(17px,-7px);
+  opacity: 0;
+  top: 0;
+  animation: rainbow 3s infinite linear;
+}
+
+.avatar-large+.comment .timestamp:hover::after {
+  opacity: 1;
+  transition: 80ms ease 10ms;
+}
+
+.avatar-large+.comment .timestamp {
+  position: relative;
+  cursor: pointer;
+}
