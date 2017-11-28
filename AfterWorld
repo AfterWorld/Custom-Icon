@@ -1,3 +1,4 @@
+/* Ult#2099 */
 .avatar-profile::before,
 .avatar-profile::after,
 .avatar-large+.comment .timestamp::before,
