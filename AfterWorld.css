@@ -31,7 +31,7 @@
 }
 
 .avatar-large+.comment .timestamp::after {
-  content: "Black Clover: https://readblackclover.com   Magic Knight Order: Black Bulls";
+  content: "Black Clover: https://readblackclover.com   My Magic Knight Order: Black Bulls";
   background-color: var(--Background-Colour) !important;
   box-shadow: 1px 1px 15px rgba(0,216,86, 0.9)!important;
   padding: 6px 10px;
