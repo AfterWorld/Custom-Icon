@@ -175,8 +175,8 @@
 /*==========================================================================================================================*/
 @font-face {
 font-family: "CallingAngels";
-src: url("Calling Angels Personal Use.ttf");
+src: url(https://www.dropbox.com/s/dk49k35iu0sn9in/Calling%20Angels%20Personal%20Use.ttf?dl=0);
 }
-div {
-    font-family: CallingAngels;
+{
+font-family: CallingAngels;
 }
