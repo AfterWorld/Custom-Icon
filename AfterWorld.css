@@ -116,3 +116,60 @@
   cursor: pointer;
 }
 /*==========================================================================================================================*/
+/* Icon 3 */
+[style*="avatars/224024513719828481"].avatar-profile::before,
+[style*="avatars/224024513719828481"].avatar-profile::after,
+[style*="avatars/224024513719828481"].avatar-large+.comment .timestamp::before,
+[style*="avatars/224024513719828481"].avatar-large+.comment .timestamp::after {
+  display: inline-block!important;
+}
+
+[style*="avatars/224024513719828481"].avatar-large+.comment .timestamp::before {
+  content: url(https://i.imgur.com/OHtyZp6.png);
+  color: rgba(0,255,0,.3);
+  font-size: 13px;
+  z-index: 1;
+  position: relative;
+  padding-left: 1px;
+  padding-right: 4px;
+  border-radius: 2px;
+  margin-left: -3px;
+  transform: translate(0,1px);
+  cursor: pointer;
+  transition: 100ms ease;
+  pointer-events: initial;
+  animation: rainbow 3s infinite linear;
+}
+
+[style*="avatars/224024513719828481"].avatar-large+.comment .timestamp::after {
+  content: "Black Clover: readblackclover.com | Magic Knight Order: Azure Bulls";
+  background-color: var(--Background-Colour) !important;
+  box-shadow: 1px 1px 15px rgba(0,216,86, 0.9)!important;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  z-index: 3000000;
+  display: block;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  transition: 80ms ease;
+  color: var(--Main-Colour);
+  width: 120%;
+  left: 0;
+  transform: translate(17px,-7px);
+  opacity: 0;
+  top: 0;
+  animation: rainbow 3s infinite linear;
+}
+
+[style*="avatars/224024513719828481"].avatar-large+.comment .timestamp:hover::after {
+  opacity: 1;
+  transition: 80ms ease 10ms;
+}
+
+[style*="avatars/224024513719828481"].avatar-large+.comment .timestamp {
+  position: relative;
+  cursor: pointer;
+}
+/*==========================================================================================================================*/
