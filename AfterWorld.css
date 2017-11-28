@@ -1,20 +1,17 @@
-/* Ult#2099 */
-.avatar-profile::before,
-.avatar-profile::after,
-.avatar-large+.comment .timestamp::before,
-.avatar-large+.comment .timestamp::after {
-  display: none!important;
+:root {
+  --Main-Colour: rgba(128,128,128,1);
+  --Background-Colour: rgba(48,48,48,1);
 }
-
-.avatar-profile[style*="avatars/161183456896876544"]::before,
-.avatar-profile[style*="avatars/161183456896876544"]::after,
-.avatar-large[style*="avatars/161183456896876544"]+.comment .timestamp::before,
-.avatar-large[style*="avatars/161183456896876544"]+.comment .timestamp::after {
+/* Icon 1 */
+[style*="avatars/161183456896876544"].avatar-profile::before,
+[style*="avatars/161183456896876544"].avatar-profile::after,
+[style*="avatars/161183456896876544"].avatar-large+.comment .timestamp::before,
+[style*="avatars/161183456896876544"].avatar-large+.comment .timestamp::after {
   display: inline-block!important;
 }
 
-.avatar-large+.comment .timestamp::before {
-  content: url(https://i.imgur.com/QDQosfN.png) !important;
+[style*="avatars/161183456896876544"].avatar-large+.comment .timestamp::before {
+  content: url(https://i.imgur.com/QDQosfN.png);
   color: rgba(0,255,0,.3);
   font-size: 13px;
   z-index: 1;
@@ -30,8 +27,8 @@
   animation: rainbow 3s infinite linear;
 }
 
-.avatar-large+.comment .timestamp::after {
-  content: "Black Clover: https://readblackclover.com   My Magic Knight Order: Black Bulls";
+[style*="avatars/161183456896876544"].avatar-large+.comment .timestamp::after {
+  content: "This Is A Sample Text";
   background-color: var(--Background-Colour) !important;
   box-shadow: 1px 1px 15px rgba(0,216,86, 0.9)!important;
   padding: 6px 10px;
@@ -44,7 +41,7 @@
   pointer-events: none;
   transition: 80ms ease;
   color: var(--Main-Colour);
-  width: 200px;
+  width: 120%;
   left: 0;
   transform: translate(17px,-7px);
   opacity: 0;
@@ -52,32 +49,26 @@
   animation: rainbow 3s infinite linear;
 }
 
-.avatar-large+.comment .timestamp:hover::after {
+[style*="avatars/161183456896876544"].avatar-large+.comment .timestamp:hover::after {
   opacity: 1;
   transition: 80ms ease 10ms;
 }
 
-.avatar-large+.comment .timestamp {
+[style*="avatars/161183456896876544"].avatar-large+.comment .timestamp {
   position: relative;
   cursor: pointer;
 }
-/* Noodles#9512 */
-.avatar-profile::before,
-.avatar-profile::after,
-.avatar-large+.comment .timestamp::before,
-.avatar-large+.comment .timestamp::after {
-  display: none!important;
-}
-
-.avatar-profile[style*="avatars/231108251339587586"]::before,
-.avatar-profile[style*="avatars/231108251339587586"]::after,
-.avatar-large[style*="avatars/231108251339587586"]+.comment .timestamp::before,
-.avatar-large[style*="avatars/231108251339587586"]+.comment .timestamp::after {
+/*==========================================================================================================================*/
+/* Icon 2 */
+[style*="avatars/231108251339587586"].avatar-profile::before,
+[style*="avatars/231108251339587586"].avatar-profile::after,
+[style*="avatars/231108251339587586"].avatar-large+.comment .timestamp::before,
+[style*="avatars/231108251339587586"].avatar-large+.comment .timestamp::after {
   display: inline-block!important;
 }
 
-.avatar-large+.comment .timestamp::before {
-  content: url(https://i.imgur.com/OHtyZp6.png) !important;
+[style*="avatars/231108251339587586"].avatar-large+.comment .timestamp::before {
+  content: url(https://i.imgur.com/OHtyZp6.png);
   color: rgba(0,255,0,.3);
   font-size: 13px;
   z-index: 1;
@@ -93,8 +84,8 @@
   animation: rainbow 3s infinite linear;
 }
 
-.avatar-large+.comment .timestamp::after {
-  content: "Black Clover: https://readblackclover.com   My Magic Knight Order: Azure Deer";
+[style*="avatars/231108251339587586"].avatar-large+.comment .timestamp::after {
+  content: "This Is A Sample Text";
   background-color: var(--Background-Colour) !important;
   box-shadow: 1px 1px 15px rgba(0,216,86, 0.9)!important;
   padding: 6px 10px;
@@ -107,7 +98,7 @@
   pointer-events: none;
   transition: 80ms ease;
   color: var(--Main-Colour);
-  width: 200px;
+  width: 120%;
   left: 0;
   transform: translate(17px,-7px);
   opacity: 0;
@@ -115,12 +106,13 @@
   animation: rainbow 3s infinite linear;
 }
 
-.avatar-large+.comment .timestamp:hover::after {
+[style*="avatars/231108251339587586"].avatar-large+.comment .timestamp:hover::after {
   opacity: 1;
   transition: 80ms ease 10ms;
 }
 
-.avatar-large+.comment .timestamp {
+[style*="avatars/231108251339587586"].avatar-large+.comment .timestamp {
   position: relative;
   cursor: pointer;
 }
+/*==========================================================================================================================*/
