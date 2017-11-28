@@ -28,7 +28,7 @@
 }
 
 [style*="avatars/161183456896876544"].avatar-large+.comment .timestamp::after {
-  content: "This Is A Sample Text";
+  content: "Black Clover: https://readblackclover.com | Magic Knight Order: Black Bulls";
   background-color: var(--Background-Colour) !important;
   box-shadow: 1px 1px 15px rgba(0,216,86, 0.9)!important;
   padding: 6px 10px;
@@ -85,7 +85,7 @@
 }
 
 [style*="avatars/231108251339587586"].avatar-large+.comment .timestamp::after {
-  content: "This Is A Sample Text";
+  content: "Black Clover: https://readblackclover.com | Magic Knight Order: Azure Bulls";
   background-color: var(--Background-Colour) !important;
   box-shadow: 1px 1px 15px rgba(0,216,86, 0.9)!important;
   padding: 6px 10px;
