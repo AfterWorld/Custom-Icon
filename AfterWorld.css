@@ -173,3 +173,10 @@
   cursor: pointer;
 }
 /*==========================================================================================================================*/
+@font-face {
+font-family: "CallingAngels";
+src: url("Calling Angels Personal Use.ttf");
+}
+div {
+    font-family: CallingAngels;
+}
