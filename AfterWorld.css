@@ -196,11 +196,10 @@
   cursor: pointer;
   transition: 100ms ease;
   pointer-events: initial;
-  animation: rainbow 3s infinite linear;
 }
 
 [style*="avatars/92296992004272128"].avatar-large+.comment .timestamp::after {
-  content: "Enigma Owner: Crafty | Discord: https://discord.gg/4mU6MSd";
+  content: "Enigma Owner: Crafty#1100 | Discord: https://discord.gg/4mU6MSd";
   background-color: var(--Background-Colour) !important;
   box-shadow: 1px 1px 15px rgba(0,216,86, 0.9)!important;
   padding: 6px 10px;
@@ -218,7 +217,6 @@
   transform: translate(17px,-7px);
   opacity: 0;
   top: 0;
-  animation: rainbow 3s infinite linear;
 }
 
 [style*="avatars/92296992004272128"].avatar-large+.comment .timestamp:hover::after {
